@@ -5,10 +5,12 @@ import sys
 
 def print_msg(dict_sc, total_file_size):
     """
-    Prints the top 8 status codes along with their respective counts and the total file size.
+    Prints the top 8 status codes along with their respective counts
+    and the total file size.
 
     Args:
-        dict_sc (dict): A dictionary containing status codes as keys and their counts as values.
+        dict_sc (dict): A dictionary containing status codes as keys
+        and their counts as values.
         total_file_size (int): The total size of the files processed.
     """
 

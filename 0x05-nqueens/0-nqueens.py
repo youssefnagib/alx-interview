@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+
 def is_valid(board, row, col, n):
     """ validate the board"""
     for i in range(row):
@@ -9,6 +10,7 @@ def is_valid(board, row, col, n):
            board[i] + i == col + row:
             return False
     return True
+
 
 def solve_nqueens(n, row, board, solutions):
     """solve nqueens"""
@@ -22,12 +24,14 @@ def solve_nqueens(n, row, board, solutions):
             solve_nqueens(n, row + 1, board, solutions)
             board[row] = -1
 
+
 def print_solution(board):
     """ Print Solution"""
     solution = []
     for row in range(len(board)):
         solution.append([row, board[row]])
     print(solution)
+
 
 def nqueens(n):
     """ number of solutions"""
@@ -46,6 +50,7 @@ def nqueens(n):
     for solution in solutions:
         print_solution(solution)
 
+
 def main():
     """Main"""
     if len(sys.argv) != 2:
@@ -59,6 +64,7 @@ def main():
         sys.exit(1)
 
     nqueens(n)
+
 
 if __name__ == "__main__":
     main()

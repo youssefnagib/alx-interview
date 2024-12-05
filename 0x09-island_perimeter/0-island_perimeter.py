@@ -6,7 +6,7 @@ the perimeter of an island in a grid.
 from typing import List
 
 
-def island_perimeter(grid: List[List]):
+def island_perimeter(grid):
     """
     Calculates the perimeter of an island in a grid.
 

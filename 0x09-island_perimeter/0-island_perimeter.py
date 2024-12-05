@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-from typing import List
 """
 This module contains a function that calculates
 the perimeter of an island in a grid.
 """
+from typing import List
 
 
 def island_perimeter(grid: List[List]):

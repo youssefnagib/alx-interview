@@ -13,6 +13,10 @@ def isWinner(x, nums):
 
     Ben = 0
     Maria = 0
+    if nums == 0:
+        return None
+    if nums != len(x):
+        return None
 
     for num in nums:
         if round_winner(num) == 1:

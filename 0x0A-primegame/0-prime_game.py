@@ -20,8 +20,6 @@ def isWinner(x, nums):
         elif round_winner(num) == 0:
             Maria += 1
 
-    print(Maria)
-    print(Ben)
     if Ben > Maria:
         return "Ben"
     elif Ben < Maria:
